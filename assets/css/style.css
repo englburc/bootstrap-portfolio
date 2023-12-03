@@ -10,7 +10,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 .header-container {
@@ -18,10 +18,11 @@ header {
     justify-content: space-between;
     justify-content: center;
     align-items: center;
+
 }
 
 header h1 {
-    margin: 0;
+    margin-left: 0;
 }
 
 header img {
@@ -34,17 +35,50 @@ header img {
 nav ul {
     list-style-type: none;
     padding: 0;
+    align-self: flex-end;
+    margin-right: 0;
+
 }
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
 }
+
+/* contact section styles */
+
+#contact {
+    margin-top: 20px;
+}
+
+.contact-sidebar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-left: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+/* Add media queries for responsiveness in the "Contact" section */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        align-items: center;
+    }
+}
+
 
 /* Add media queries for responsiveness */
 @media screen and (max-width: 600px) {
