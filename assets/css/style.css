@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+:root {}
+
 /* styles.css */
 
 body {
@@ -48,7 +50,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffd;
 }
 
 .header {
@@ -82,39 +84,9 @@ nav a {
 .container-main {
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 
-.grid-container-cards {
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    margin-right: auto;
-    border: solid;
-
-    grid-template-columns:
-        "pr1 pr1 pr1 pr1"
-        "pr2 pr2 pr3 pr3"
-        "pr4 pr4 pr5 pr5";
-}
-
-.pr1 {
-    grid-area: pr1;
-}
-
-.pr2 {
-    grid-area: pr2;
-}
-
-.pr3 {
-    grid-area: pr3;
-}
-
-.pr4 {
-    grid-area: pr4;
-}
-
-.pr5 {
-    grid-area: pr5;
-}
 
 
 
@@ -123,20 +95,20 @@ nav a {
 #contact {
     margin-top: 20px;
     margin-left: 0;
-    margin-right: auto;
+    margin-right: 0;
     width: 100%;
-    background-color: #6e3333;
+    /* background-color: #6e3333; */
 }
 
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-right: auto;
-    background-color: aqua;
 }
 
 .contact-sidebar {
-    background-color: #f8f9fa;
+    /* tp change */
+    /* background-color: #f8f9fa; */
     padding: 10px;
     margin-left: auto;
 }
@@ -144,11 +116,55 @@ nav a {
 .contact-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.shadow-effects:hover {
+    box-shadow: 5px 5px 5px gray;
 }
 
 .contact-item {
     margin-bottom: 10px;
+}
+
+/* contact from bootstrap */
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    /* background-color: #bac8cd; */
+    margin-left: 15px;
+}
+
+.footer .col {
+    width: 190px;
+    /* height: auto; */
+    float: inline-start;
+}
+
+.footer .col h1 {
+    margin: 0;
+    padding: 0;
+    /* font-size: 12px; */
+    /* line-height: 17px; */
+    padding: 20px 0px 5px 0px;
+    /* color: rgba(20, 1, 1, 0.349); */
+    font-weight: normal;
+    letter-spacing: 0.250em;
+}
+
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
 }
 
 /* Add media queries for responsiveness in the "Contact" section */
