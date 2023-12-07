@@ -85,9 +85,19 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: start;
+    margin-left: 20px;
 }
 
 
+/* skills section styles */
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 5rem;
+    align-items: flex-start;
+
+}
 
 
 /* contact section styles */
@@ -97,7 +107,6 @@ nav a {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    /* background-color: #6e3333; */
 }
 
 .row {
@@ -107,10 +116,10 @@ nav a {
 }
 
 .contact-sidebar {
-    /* tp change */
-    /* background-color: #f8f9fa; */
     padding: 10px;
-    margin-left: auto;
+    margin-left: 20px;
+    padding: left;
+    ;
 }
 
 .contact-info {
@@ -122,7 +131,7 @@ nav a {
 }
 
 .shadow-effects:hover {
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px 5px gray;
 }
 
 .contact-item {
@@ -136,13 +145,11 @@ nav a {
     width: 100%;
     position: relative;
     height: auto;
-    /* background-color: #bac8cd; */
     margin-left: 15px;
 }
 
 .footer .col {
     width: 190px;
-    /* height: auto; */
     float: inline-start;
 }
 
